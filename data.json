@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Website Redesign",
+    "owner": "Aarav",
+    "category": "Design",
+    "status": "In Progress",
+    "progress": 72,
+    "priority": "High",
+    "budget": 48000
+  },
+  {
+    "id": 2,
+    "name": "Mobile App Launch",
+    "owner": "Meera",
+    "category": "Development",
+    "status": "Completed",
+    "progress": 100,
+    "priority": "High",
+    "budget": 85000
+  },
+  {
+    "id": 3,
+    "name": "SEO Campaign",
+    "owner": "Kabir",
+    "category": "Marketing",
+    "status": "In Progress",
+    "progress": 58,
+    "priority": "Medium",
+    "budget": 32000
+  },
+  {
+    "id": 4,
+    "name": "Customer Research",
+    "owner": "Riya",
+    "category": "Research",
+    "status": "Planning",
+    "progress": 25,
+    "priority": "Medium",
+    "budget": 18000
+  },
+  {
+    "id": 5,
+    "name": "Design System",
+    "owner": "Ishaan",
+    "category": "Design",
+    "status": "Completed",
+    "progress": 100,
+    "priority": "Low",
+    "budget": 27000
+  },
+  {
+    "id": 6,
+    "name": "Analytics Upgrade",
+    "owner": "Anaya",
+    "category": "Development",
+    "status": "In Progress",
+    "progress": 81,
+    "priority": "High",
+    "budget": 54000
+  },
+  {
+    "id": 7,
+    "name": "Email Automation",
+    "owner": "Vihaan",
+    "category": "Marketing",
+    "status": "Planning",
+    "progress": 35,
+    "priority": "Low",
+    "budget": 21000
+  },
+  {
+    "id": 8,
+    "name": "User Testing",
+    "owner": "Sara",
+    "category": "Research",
+    "status": "Completed",
+    "progress": 100,
+    "priority": "Medium",
+    "budget": 15000
+  }
+]

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Pulse project dashboard — a responsive, accessible mini web application.">
+<title>Pulse — Project Dashboard</title>
+<link rel="preload" href="app.min.css" as="style">
+<link rel="stylesheet" href="app.min.css">
+<script src="app.min.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="logo" href="#" aria-label="Pulse Dashboard home">PULSE<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+    <nav id="navigation" aria-label="Primary navigation">
+      <a href="#overview">Overview</a><a href="#projects">Projects</a><a href="#insights">Insights</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+<section class="hero" id="overview">
+  <div><p class="eyebrow">FINAL MINI WEB APPLICATION</p>
+  <h1>Project performance, at a glance.</h1>
+  <p class="lead">A responsive dashboard combining dynamic JSON data, filtering, sorting, accessibility, and performance-focused frontend practices.</p></div>
+  <div class="hero-card"><span>Portfolio health</span><strong id="health">—</strong><small>Average project progress</small></div>
+</section>
+
+<section class="stats" aria-label="Dashboard summary">
+  <article><span>Total projects</span><strong id="total">—</strong></article>
+  <article><span>Completed</span><strong id="completed">—</strong></article>
+  <article><span>In progress</span><strong id="active">—</strong></article>
+  <article><span>Total budget</span><strong id="budget">—</strong></article>
+</section>
+
+<section class="panel" id="projects">
+  <div class="section-title"><div><p class="eyebrow">DYNAMIC DATA</p><h2>Projects</h2></div><span id="result-count" aria-live="polite">Loading…</span></div>
+  <div class="controls">
+    <label>Search <input id="search" type="search" placeholder="Search projects or owners" autocomplete="off"></label>
+    <label>Status <select id="status"><option value="All">All statuses</option><option>Completed</option><option>In Progress</option><option>Planning</option></select></label>
+    <label>Sort <select id="sort"><option value="progress-desc">Progress: high to low</option><option value="progress-asc">Progress: low to high</option><option value="name">Name A–Z</option><option value="budget-desc">Budget: high to low</option></select></label>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <caption class="sr-only">Project portfolio data</caption>
+      <thead><tr><th scope="col">Project</th><th scope="col">Owner</th><th scope="col">Category</th><th scope="col">Status</th><th scope="col">Progress</th><th scope="col">Budget</th></tr></thead>
+      <tbody id="project-body"><tr><td colspan="6">Loading project data…</td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="panel" id="insights">
+  <div class="section-title"><div><p class="eyebrow">VISUAL SUMMARY</p><h2>Progress by project</h2></div></div>
+  <div id="chart" class="chart" aria-label="Project progress chart"></div>
+</section>
+</main>
+<footer><div class="wrap"><strong>PULSE.</strong><span>Week 5 Final Project Integration</span></div></footer>
+</body>
+</html>
